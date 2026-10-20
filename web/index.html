@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a24">
+  <meta name="description" content="AutoTune 多平台内容协作与社区反馈工作台">
+  <title>AutoTune · 内容与社区工作台</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark"><span></span><span></span><span></span></div><div><strong>AutoTune</strong><small>CONTENT OPERATIONS</small></div></div>
+      <div class="workspace-switch"><div class="workspace-avatar">星</div><div><strong>星海项目组</strong><small>全球社区运营</small></div><span class="chevron">⌄</span></div>
+      <div class="nav-label">工作空间</div>
+      <nav id="nav"></nav>
+      <div class="sidebar-bottom"><div class="sync-dot"></div><div><strong>本地原型模式</strong><small>数据保存在此浏览器</small></div></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><button class="mobile-menu" id="menuBtn" aria-label="打开导航">☰</button><div class="breadcrumb">工作空间 <span>/</span> <strong id="breadcrumbCurrent">总览</strong></div><div class="top-actions"><span class="today" id="today"></span><button class="icon-button" id="searchBtn" title="搜索当前页面" aria-label="搜索">⌕</button><div class="user-avatar" title="运营负责人">L</div></div></header>
+      <div class="main-scroll"><div class="content" id="content"></div></div>
+    </main>
+  </div>
+  <div class="modal-layer" id="modalLayer" hidden></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
